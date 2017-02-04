@@ -54,7 +54,7 @@ shinyApp(
     output$question<-renderText({""})
     observe({
       print("START ASK QUESTION")
-      question<-input$albert
+      question<-input$jarvis
       print(question)
       answer<-""
       if(length(question)>0)
