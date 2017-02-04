@@ -1,9 +1,9 @@
 var initVoice = function() {
   if (annyang) {
-    Shiny.onInputChange('albert', '');
+    Shiny.onInputChange('jarvis', '');
     var commands = {
-      'albert *albert': function(albert) {
-        Shiny.onInputChange('albert', albert);
+      'jarvis *jarvis': function(jarvis) {
+        Shiny.onInputChange('jarvis', jarvis);
       }
     };
     annyang.addCommands(commands);
